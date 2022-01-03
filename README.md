@@ -1,2 +1,2 @@
 # algorithm
-DS, Algorithm
+파이썬을 활용한 알고리즘 문제 풀이를 기록합니다.
