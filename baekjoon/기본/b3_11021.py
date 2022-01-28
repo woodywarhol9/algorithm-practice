@@ -1,0 +1,6 @@
+#f-string 사용법 익히기
+T = int(input())
+
+for i in range(T):
+    A, B = map(int, input().split())
+    print(f"Case #{i+1}:",A + B)
