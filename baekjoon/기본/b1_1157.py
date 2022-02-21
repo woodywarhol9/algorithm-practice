@@ -1,3 +1,6 @@
+"""
+처음으로 시간 초과가 발생한 문제. for문을 사용할 때 주의하자!
+"""
 word = input().upper()
 char = list(set(word))
 
