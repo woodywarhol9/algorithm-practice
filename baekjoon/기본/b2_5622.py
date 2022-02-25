@@ -1,16 +1,17 @@
 """
-S와 U만 따로 뺴주면 나머진 3의 배수로 처리 가능
-=> YZ를 생각 안 했었다... 
+S와 U만 따로 뺴주면 나머진 3의 배수로 처리 가능.
 """
 
 word = input()
 count = 0
 
-char_list = ["ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"]
-
 for i in word:
-    for c in char_list:
-        if i in c:
-            count += (3 + char_list.index(c))     
-        
+    if ord(i) == 83: #unicode of S
+        count += 8
+    elif ord(i) == 86: #unicode of v
+        count += 9
+    else:
+        count += (3 + (ord(i) - 65) // 3) #unicode of A
+
 print(count)
+    
