@@ -1,8 +1,6 @@
 """
 메모리 제한 주의!
 """
-
-
 import sys
 
 n = int(input())
