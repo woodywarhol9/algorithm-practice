@@ -8,11 +8,12 @@ queue = deque([i for i in range(1, queue_size + 1)])
 
 count = 0
 for pos in pos_list:
-    # 
+    # queue[0]에 찾고자 하는 숫자 있는 지 확인
     if queue[0] == pos:
         queue.popleft()
         continue
     else:
+        # 없다면 앞, 뒤로 돌리면서 확인
         temp_front = copy.deepcopy(queue)
         temp_back = copy.deepcopy(queue)
         for _ in range(queue_size // 2):
