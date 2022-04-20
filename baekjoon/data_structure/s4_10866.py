@@ -1,6 +1,5 @@
 """
-시간 복잡도 1로 만들기 위해서 linked list로 구현
-- 시간 복잡도 1인데도 시간 초과가 나와 pypy로 변경해서 통과
+Doubly linked list로 dequeue 구현.
 """
 import sys
 
