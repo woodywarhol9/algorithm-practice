@@ -28,6 +28,7 @@ while True:
                 print("no")
                 break
     else:
+        # 길이가 0이 아니면 짝이 안 맞음.
         if len(stack_braket) != 0:
             print("no")
         else:
