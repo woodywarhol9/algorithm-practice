@@ -5,10 +5,10 @@ def parametric_search(array : list, target : int):
     end = len(array) - 1
     # 결과 저장
     result = 0
-    
+    # target이 위치하려면 array[mid] 보다 커야 함.
     while start <= end:
         mid = (start + end) // 2
-        # 조건 만족시키기 위해서 start 이동
+        # 조건 만족시키기 위해서 이동
         if array[mid] < target:
             start = mid + 1
         # 조건 만족하는 최적 위치 찾기
