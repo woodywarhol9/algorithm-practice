@@ -7,6 +7,7 @@ from collections import deque
 def dfs(graph : list, start : int, visited : list):
     # 방문 처리가 계속 전달돼야 함.
     visited[start - 1] = True
+    # 방문 출력
     print(start, end = " ")
     for node in graph[start - 1]:
         if not visited[node - 1]:
@@ -20,15 +21,13 @@ def bfs(graph : list, start : int):
     # 초기 위치 queue에 삽입
     queue = deque([start - 1])
     while queue:
+        # 방문 순서대로 출력(queue 이므로)
         pop = queue.popleft()
-        print(pop, end = " ")
+        print(pop + 1, end = " ")
         for node in graph[pop]:
             if not visited[node - 1]:
                 queue.append(node - 1)
                 visited[node - 1] = True
-                print(node, end = " ")
-    
-    
         
 node, edge, start = map(int, input().split())
 # 엣지 정보
