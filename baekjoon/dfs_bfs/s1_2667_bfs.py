@@ -11,7 +11,6 @@ def bfs(graph : list, visited_list : list, start : list):
     while queue:
         # 좌표 설정 및 방문 처리
         x, y = queue.popleft()
-        visited_list[x][y] = True
         # 좌표 이동
         for i in range(4):
             x_new = x + dx[i]
