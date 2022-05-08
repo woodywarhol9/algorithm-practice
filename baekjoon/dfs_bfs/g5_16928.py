@@ -16,12 +16,14 @@ def bfs(graph : list):
                 # 사다리가 있을 경우
                 if x_new in ladder_dict:
                     x_ladder = ladder_dict[x_new]
+                    # 이동한 점이 아직 방문 안한 경우
                     if graph[x_ladder] == 0:
                         graph[x_ladder] = graph[x_new]
                         queue.append(x_ladder)
                 # 뱀이 있을 경우
                 elif x_new in snake_dict:
                     x_snake = snake_dict[x_new]
+                    # 이동한 점이 아직 방문 안한 경우
                     if graph[x_snake] == 0:
                         graph[x_snake] = graph[x_new]
                         queue.append(x_snake)
