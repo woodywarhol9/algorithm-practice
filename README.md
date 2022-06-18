@@ -1,4 +1,5 @@
 # Problem Solving
-Problem Solving in Python   
 
-[![Solved.ac 프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=woodywarhol9)](https://solved.ac/woodywarhol9)
+#### [baekjoon](https://github.com/Woodywarhol9/algorithm/tree/main/baekjoon)
+#### [softeer](https://github.com/Woodywarhol9/algorithm/tree/main/softeer)
+#### [programmers](https://github.com/Woodywarhol9/algorithm/tree/main/programmers)
