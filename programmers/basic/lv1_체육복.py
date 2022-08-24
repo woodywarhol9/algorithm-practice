@@ -1,13 +1,19 @@
-def solution(n, lost, reserve): 
+def solution(n, lost, reserve):
+    # 빌려줄 수 있는 학생 재확인
+    for i in lost[:]:
+        if i in reserve:
+            reserve.remove(i)
+            lost.remove(i)
+    # 정렬 안된 경우 처리
+    lost.sort()
+    reserve.sort()
     
-    #lost = reserve인 학생 제거
-    new_reserve = set(reserve)-set(lost) 
-    new_lost = set(lost)-set(reserve) 
-    
-    for i in new_reserve:      
-        if i-1 in new_lost: 
-            new_lost.remove(i-1)            
-        elif i+1 in new_lost: 
-            new_lost.remove(i+1) 
-            
-    return n-len(new_lost)
+    cnt = n - len(lost)
+    for i in lost:
+        if i - 1 in reserve[:]:
+            reserve.remove(i - 1)
+            cnt += 1
+        elif i + 1 in reserve[:]:
+            reserve.remove(i + 1)
+            cnt += 1
+    return cnt

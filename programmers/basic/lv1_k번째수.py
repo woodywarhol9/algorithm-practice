@@ -1,11 +1,6 @@
 def solution(array, commands):
-    answer = []
-    
-    #commands 접근
-    for command in commands:
-        i, j, k = command
+    result = []
+    for i, j, k in commands:
+        result.append(sorted(array[i - 1: j])[k -1])
+    return result
         
-        sorted_array = sorted(array[i-1:j]) #index 주의
-        answer.append(sorted_array[k-1])
-    
-    return answer
