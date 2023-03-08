@@ -1,3 +1,10 @@
+# Problem Solving
+알고리즘 문제 풀이 내역을 업로드합니다.
+### 사이트 별 풀이 확인
+- [Baekjoon](#Baekjoon-문제-풀이-내역)
+- [Programmers](#Programmers-문제-풀이-내역)
+- [Softeer](#Softeer-문제-풀이-내역)
+---
 ## Baekjoon 문제 풀이 내역
 | \# | Date | Problem | Solution | Difficulty | Solved |
 | :----: | :------: | :---------------: | :-----: | :------: | :-------: |
@@ -166,3 +173,145 @@
 3|2022-01-24|2588|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/baekjoon/solved/basic/b4_2588.py)|![티어](auto-readme/src/2.svg)|✔️
 2|2022-01-24|1008|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/baekjoon/solved/basic/b4_1008.py)|![티어](auto-readme/src/2.svg)|✔️
 1|2021-12-28|1110|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/baekjoon/solved/basic/b1_1110.py)|![티어](auto-readme/src/5.svg)|✔️
+---
+## Programmers 문제 풀이 내역
+| \# | Date | Problem | Solution | Difficulty | Solved |
+| :----: | :------: | :---------------: | :-----: | :------: | :-------: |
+120|2023-02-23|모음사전|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_모음사전.py)|⭐⭐☆☆☆|✔️
+119|2023-02-22|[3차]파일명정렬|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_[3차]파일명정렬.py)|⭐⭐☆☆☆|✔️
+118|2023-02-22|[1차]프렌즈4블록|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_[1차]프렌즈4블록.py)|⭐⭐☆☆☆|✔️
+117|2023-02-21|방문길이|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_방문길이.py)|⭐⭐☆☆☆|✔️
+116|2023-02-21|땅따먹기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_땅따먹기.py)|⭐⭐☆☆☆|✔️
+115|2023-02-20|스킬트리|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_스킬트리.py)|⭐⭐☆☆☆|✔️
+114|2023-02-19|오픈채팅방|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_오픈채팅방.py)|⭐⭐☆☆☆|✔️
+113|2023-02-17|주차요금계산|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_주차요금계산.py)|⭐⭐☆☆☆|✔️
+112|2023-02-17|[3차]n진수게임|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_[3차]n진수게임.py)|⭐⭐☆☆☆|✔️
+111|2023-02-16|더맵게|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_더맵게.py)|⭐⭐☆☆☆|✔️
+110|2023-02-15|피로도|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_피로도.py)|⭐⭐☆☆☆|✔️
+109|2023-02-15|[3차]압축|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_[3차]압축.py)|⭐⭐☆☆☆|✔️
+108|2023-02-14|k진수에서소수개수구하기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_k진수에서소수개수구하기.py)|⭐⭐☆☆☆|✔️
+107|2023-02-13|연속부분수열합의개수|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_연속부분수열합의개수.py)|⭐⭐☆☆☆|✔️
+106|2023-02-11|전화번호목록|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/retry/lv2_전화번호목록.py)|⭐⭐☆☆☆|❌
+105|2023-02-10|귤고르기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_귤고르기.py)|⭐⭐☆☆☆|✔️
+104|2023-02-09|[1차]뉴스클러스터링|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_[1차]뉴스클러스터링.py)|⭐⭐☆☆☆|✔️
+103|2023-02-09|n^2배열자르기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/retry/lv2_n^2배열자르기.py)|⭐⭐☆☆☆|❌
+102|2023-02-08|튜플|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_튜플.py)|⭐⭐☆☆☆|✔️
+101|2023-02-08|위장|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_위장.py)|⭐⭐☆☆☆|✔️
+100|2023-02-07|행렬의곱셈|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_행렬의곱셈.py)|⭐⭐☆☆☆|✔️
+99|2023-02-07|괄호회전하기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_괄호회전하기.py)|⭐⭐☆☆☆|✔️
+98|2023-02-07|[1차]캐시|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_[1차]캐시.py)|⭐⭐☆☆☆|✔️
+97|2023-02-06|멀리뛰기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_멀리뛰기.py)|⭐⭐☆☆☆|✔️
+96|2023-02-04|점프와순간이동|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_점프와순간이동.py)|⭐⭐☆☆☆|✔️
+95|2023-02-04|예상대진표|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_예상대진표.py)|⭐⭐☆☆☆|✔️
+94|2023-02-03|N개의최소공배수구하기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_N개의최소공배수구하기.py)|⭐⭐☆☆☆|✔️
+93|2023-02-02|구명보트|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_구명보트.py)|⭐⭐☆☆☆|✔️
+92|2023-02-01|카펫|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_카펫.py)|⭐⭐☆☆☆|✔️
+91|2023-01-31|영어끝말잇기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_영어끝말잇기.py)|⭐⭐☆☆☆|✔️
+90|2023-01-30|짝지어제거하기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_짝지어제거하기.py)|⭐⭐☆☆☆|✔️
+89|2023-01-30|다음큰숫자|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_다음큰숫자.py)|⭐⭐☆☆☆|✔️
+88|2023-01-29|피보나치수|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_피보나치수.py)|⭐⭐☆☆☆|✔️
+87|2023-01-29|숫자의표현|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_숫자의표현.py)|⭐⭐☆☆☆|✔️
+86|2023-01-27|최솟값만들기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_최솟값만들기.py)|⭐⭐☆☆☆|✔️
+85|2023-01-27|최댓값과최솟값|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_최댓값과최솟값.py)|⭐⭐☆☆☆|✔️
+84|2023-01-27|이진변환반복하기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_이진변환반복하기.py)|⭐⭐☆☆☆|✔️
+83|2023-01-27|JadenCase문자열만들기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_JadenCase문자열만들기.py)|⭐⭐☆☆☆|✔️
+82|2023-01-27|개인정보수집유효기간|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_개인정보수집유효기간.py)|⭐☆☆☆☆|✔️
+81|2023-01-25|햄버거만들기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_햄버거만들기.py)|⭐☆☆☆☆|✔️
+80|2023-01-25|문자열나누기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_문자열나누기.py)|⭐☆☆☆☆|✔️
+79|2023-01-24|옹알이(2)|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_옹알이(2).py)|⭐☆☆☆☆|✔️
+78|2023-01-20|기사단원의무기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_기사단원의무기.py)|⭐☆☆☆☆|✔️
+77|2023-01-19|숫자짝궁|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_숫자짝궁.py)|⭐☆☆☆☆|✔️
+76|2023-01-19|명예의전당(1)|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_명예의전당(1).py)|⭐☆☆☆☆|✔️
+75|2023-01-18|푸드파이터대회|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_푸드파이터대회.py)|⭐☆☆☆☆|✔️
+74|2023-01-18|과일장수|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_과일장수.py)|⭐☆☆☆☆|✔️
+73|2023-01-18|가장가까운같은글자|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_가장가까운같은글자.py)|⭐☆☆☆☆|✔️
+72|2023-01-17|크기가작은부분수열|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_크기가작은부분수열.py)|⭐☆☆☆☆|✔️
+71|2023-01-17|콜라문제|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_콜라문제.py)|⭐☆☆☆☆|✔️
+70|2023-01-17|삼총사|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_삼총사.py)|⭐☆☆☆☆|✔️
+69|2022-11-04|다리를지나는트럭|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_다리를지나는트럭.py)|⭐⭐☆☆☆|✔️
+68|2022-11-04|주식가격|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/retry/lv2_주식가격.py)|⭐⭐☆☆☆|❌
+67|2022-11-03|프린터|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_프린터.py)|⭐⭐☆☆☆|✔️
+66|2022-11-03|여행경로|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/retry/lv3_여행경로.py)|⭐⭐⭐☆☆|❌
+65|2022-11-01|올바른괄호|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_올바른괄호.py)|⭐⭐☆☆☆|✔️
+64|2022-11-01|기능개발|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_기능개발.py)|⭐⭐☆☆☆|✔️
+63|2022-10-11|단어변환|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv3_단어변환.py)|⭐⭐⭐☆☆|✔️
+62|2022-10-08|네트워크|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/retry/lv3_네트워크.py)|⭐⭐⭐☆☆|❌
+61|2022-10-07|게임맵최단거리|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_게임맵최단거리.py)|⭐⭐☆☆☆|✔️
+60|2022-10-03|타겟넘버|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/retry/lv2_타겟넘버.py)|⭐⭐☆☆☆|❌
+59|2022-10-02|H-Index|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_H-Index.py)|⭐⭐☆☆☆|✔️
+58|2022-10-02|가장큰수|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/retry/lv2_가장큰수.py)|⭐⭐☆☆☆|❌
+57|2022-10-01|신고결과받기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_신고결과받기.py)|⭐☆☆☆☆|✔️
+56|2022-10-01|성격유형검사하기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_성격유형검사하기.py)|⭐☆☆☆☆|✔️
+55|2022-09-27|키패드누르기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_키패드누르기.py)|⭐☆☆☆☆|✔️
+54|2022-09-27|신규아이디추천|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_신규아이디추천.py)|⭐☆☆☆☆|✔️
+53|2022-09-26|숫자문자열과영단어|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_숫자문자열과영단어.py)|⭐☆☆☆☆|✔️
+52|2022-09-26|로또의최고순위와최저순위|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_로또의최고순위와최저순위.py)|⭐☆☆☆☆|✔️
+51|2022-09-16|크레인인형뽑기게임|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_크레인인형뽑기게임.py)|⭐☆☆☆☆|✔️
+50|2022-09-16|최소직사각형|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_최소직사각형.py)|⭐☆☆☆☆|✔️
+49|2022-09-16|같은숫자는싫어|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_같은숫자는싫어.py)|⭐☆☆☆☆|✔️
+48|2022-08-24|폰켓몬|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_폰켓몬.py)|⭐☆☆☆☆|✔️
+47|2022-08-24|음양더하기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_음양더하기.py)|⭐☆☆☆☆|✔️
+46|2022-08-24|완주하지못한선수|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_완주하지못한선수.py)|⭐☆☆☆☆|✔️
+45|2022-08-24|없는숫자더하기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_없는숫자더하기.py)|⭐☆☆☆☆|✔️
+44|2022-08-24|소수만들기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_소수만들기.py)|⭐☆☆☆☆|✔️
+43|2022-08-24|모의고사|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_모의고사.py)|⭐☆☆☆☆|✔️
+42|2022-08-24|내적|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_내적.py)|⭐☆☆☆☆|✔️
+41|2022-08-23|실패율|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_실패율.py)|⭐☆☆☆☆|✔️
+40|2022-08-22|예산|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_예산.py)|⭐☆☆☆☆|✔️
+39|2022-08-22|약수의개수와덧셈|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_약수의개수와덧셈.py)|⭐☆☆☆☆|✔️
+38|2022-08-22|두개뽑아서더하기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_두개뽑아서더하기.py)|⭐☆☆☆☆|✔️
+37|2022-08-22|나머지가1이되는수찾기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_나머지가1이되는수찾기.py)|⭐☆☆☆☆|✔️
+36|2022-08-22|3진법뒤집기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_3진법뒤집기.py)|⭐☆☆☆☆|✔️
+35|2022-08-22|2016년|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_2016년.py)|⭐☆☆☆☆|✔️
+34|2022-08-19|부족함금액계산하기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_부족함금액계산하기.py)|⭐☆☆☆☆|✔️
+33|2022-08-19|나누어떨어지는숫자배열|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_나누어떨어지는숫자배열.py)|⭐☆☆☆☆|✔️
+32|2022-08-19|가운데글자가져오기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_가운데글자가져오기.py)|⭐☆☆☆☆|✔️
+31|2022-08-19|[1차]비밀지도|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_[1차]비밀지도.py)|⭐☆☆☆☆|✔️
+30|2022-08-19|[1차]다트게임|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_[1차]다트게임.py)|⭐☆☆☆☆|✔️
+29|2022-08-18|시저암호|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_시저암호.py)|⭐☆☆☆☆|✔️
+28|2022-08-18|수박|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_수박.py)|⭐☆☆☆☆|✔️
+27|2022-08-18|소수찾기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_소수찾기.py)|⭐☆☆☆☆|✔️
+26|2022-08-18|서울에서김서방찾기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_서울에서김서방찾기.py)|⭐☆☆☆☆|✔️
+25|2022-08-18|문자열을정수로바꾸기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_문자열을정수로바꾸기.py)|⭐☆☆☆☆|✔️
+24|2022-08-18|문자열다루기기본|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_문자열다루기기본.py)|⭐☆☆☆☆|✔️
+23|2022-08-18|문자열내마음대로정렬하기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_문자열내마음대로정렬하기.py)|⭐☆☆☆☆|✔️
+22|2022-08-18|문자열내림차순으로배치하기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_문자열내림차순으로배치하기.py)|⭐☆☆☆☆|✔️
+21|2022-08-18|문자열내p와y의개수|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_문자열내p와y의개수.py)|⭐☆☆☆☆|✔️
+20|2022-08-18|두정수사이의합|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_두정수사이의합.py)|⭐☆☆☆☆|✔️
+19|2022-08-17|최대공약수와최소공배수|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_최대공약수와최소공배수.py)|⭐☆☆☆☆|✔️
+18|2022-08-17|짝수와홀수|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_짝수와홀수.py)|⭐☆☆☆☆|✔️
+17|2022-08-17|제일작은수제거하기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_제일작은수제거하기.py)|⭐☆☆☆☆|✔️
+16|2022-08-17|정수제곱근판별|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_정수제곱근판별.py)|⭐☆☆☆☆|✔️
+15|2022-08-17|정수내림차순으로배치하기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_정수내림차순으로배치하기.py)|⭐☆☆☆☆|✔️
+14|2022-08-17|자연수뒤집어배열로만들기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_자연수뒤집어배열로만들기.py)|⭐☆☆☆☆|✔️
+13|2022-08-17|자릿수더하기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_자릿수더하기.py)|⭐☆☆☆☆|✔️
+12|2022-08-17|이상한문자만들기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_이상한문자만들기.py)|⭐☆☆☆☆|✔️
+11|2022-08-17|약수의합|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_약수의합.py)|⭐☆☆☆☆|✔️
+10|2022-08-16|행렬의덧셈|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_행렬의덧셈.py)|⭐☆☆☆☆|✔️
+9|2022-08-16|핸드폰번호가리기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_핸드폰번호가리기.py)|⭐☆☆☆☆|✔️
+8|2022-08-16|하샤드수|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_하샤드수.py)|⭐☆☆☆☆|✔️
+7|2022-08-16|평균구하기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_평균구하기.py)|⭐☆☆☆☆|✔️
+6|2022-08-16|직사각형별찍기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_직사각형별찍기.py)|⭐☆☆☆☆|✔️
+5|2022-08-16|x만큼간격이있는n개의숫자|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_x만큼간격이있는n개의숫자.py)|⭐☆☆☆☆|✔️
+4|2021-12-28|할인행사|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv2_할인행사.py)|⭐⭐☆☆☆|✔️
+3|2021-12-28|콜라츠추측|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_콜라츠추측.py)|⭐☆☆☆☆|✔️
+2|2021-11-06|체육복|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_체육복.py)|⭐☆☆☆☆|✔️
+1|2021-10-27|k번째수|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/programmers/solved/lv1_k번째수.py)|⭐☆☆☆☆|✔️
+---
+## Softeer 문제 풀이 내역
+| \# | Date | Problem | Solution | Difficulty | Solved |
+| :----: | :------: | :---------------: | :-----: | :------: | :-------: |
+13|2022-05-20|성적평균|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/softeer/solved/3_성적평균.py)|⭐⭐⭐☆☆|✔️
+12|2022-05-19|스마트물류|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/softeer/solved/3_스마트물류.py)|⭐⭐⭐☆☆|✔️
+11|2022-05-18|택배마스터광우|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/softeer/solved/3_택배마스터광우.py)|⭐⭐⭐☆☆|✔️
+10|2022-05-18|[인증평가(3차)기출]플레이페어암호|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/softeer/solved/3_[인증평가(3차)기출]플레이페어암호.py)|⭐⭐⭐☆☆|✔️
+9|2022-05-18|지도자동구축|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/softeer/solved/2_지도자동구축.py)|⭐⭐☆☆☆|✔️
+8|2022-05-18|장애물인식프로그램|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/softeer/solved/2_장애물인식프로그램.py)|⭐⭐☆☆☆|✔️
+7|2022-05-17|8단변속기|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/softeer/solved/2_8단변속기.py)|⭐⭐☆☆☆|✔️
+6|2022-05-17|바이러스|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/softeer/retry/2_바이러스.py)|⭐⭐☆☆☆|❌
+5|2022-05-16|금고털이|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/softeer/solved/2_금고털이.py)|⭐⭐☆☆☆|✔️
+4|2022-05-16|[21년재직자대회예선]비밀메뉴|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/softeer/solved/2_[21년재직자대회예선]비밀메뉴.py)|⭐⭐☆☆☆|✔️
+3|2022-05-16|GBC|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/softeer/solved/2_GBC.py)|⭐⭐☆☆☆|✔️
+2|2022-05-14|[21년재직자대회예선]전광판|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/softeer/solved/2_[21년재직자대회예선]전광판.py)|⭐⭐☆☆☆|✔️
+1|2022-05-13|[21년재직자대회예선]회의실예약|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/92f47ef665ed2ec12ac377d00be547806fe7a351/softeer/solved/2_[21년재직자대회예선]회의실예약.py)|⭐⭐☆☆☆|✔️
+---
