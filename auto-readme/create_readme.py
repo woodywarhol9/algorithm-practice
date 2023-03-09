@@ -1,8 +1,13 @@
+import asyncio
+import pickle
+import sys
 import os
 import re
-from typing import List, Dict, Tuple
+
+from crawler import get_problems, save_and_return_problems
+from typing import List, Dict
 from git import Repo
-from crawler import *
+
 
 # 관리할 폴더
 PLATFORMS = ["baekjoon", "programmers"]  # , "softeer"]
@@ -195,6 +200,7 @@ def concat_readme(platforms: List[str]):
                 main_readme.write(readme.read() + "\n")
                 main_readme.write("---" + "\n")
 
+
 if __name__ == "__main__":
     # 윈도우 10 문제 해결
     if sys.platform == "win32":
@@ -205,7 +211,7 @@ if __name__ == "__main__":
     problems = asyncio.run(get_problems({platform: [
                            file_info.title for file_info in file_infos] for platform, file_infos in file_infos_platform.items()}))
     print("크롤링 완료")
-    problem_infos = save_and_return_problem(problems)
+    problem_infos = save_and_return_problems(problems)
     with open("test", "rb") as file:
         problem_infos = pickle.load(file)
     modify_titles(sum(file_infos_platform.values(), []), problem_infos)

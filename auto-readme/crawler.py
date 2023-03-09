@@ -167,7 +167,7 @@ async def get_problems(problem_infos: Dict[str, List[str]]) -> List[Problem]:
     return problems
 
 
-def save_and_return_problem(problems: List[Problem]) -> Dict[str, List[str]]:
+def save_and_return_problems(problems: List[Problem]) -> Dict[str, List[str]]:
     """
     문제의 고유 정보 저장
     - problem_infos : {"baekjoon/1000" : [문제 이름, url], "programmers/다트" : [문제이름, url]}
@@ -181,7 +181,7 @@ def save_and_return_problem(problems: List[Problem]) -> Dict[str, List[str]]:
     return problem_infos
 
 
-def upsert_problem(problems: List[Problem]):
+def upsert_problems(problems: List[Problem]):
     """
     문제의 고유 정보 업데이트
     """
@@ -190,7 +190,8 @@ def upsert_problem(problems: List[Problem]):
         problem_infos = pickle.load(file)
         for problem in problems:
             problem_key = f"{problem.platform}/{problem.title}" if problem.platform != "baekjoon" else f"{problem.platform}/{problem.id}"
-            problem_infos[problem_key] = [problem.id, problem.title, problem.url]
+            problem_infos[problem_key] = [
+                problem.id, problem.title, problem.url]
             problem_infos.update(
                 [problem_key, [problem.id, problem.title, problem.url]])
     # 저장
@@ -199,10 +200,9 @@ def upsert_problem(problems: List[Problem]):
 
 
 if __name__ == "__main__":
-    pass
     # Windows의 aiohttp 오류 방지
-    # if sys.platform == "win32":
-    #     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-    # problems = asyncio.run(get_problems(
-    #     {"baekjoon": ["1011", "1023", "1024"], "baekjoon2": ["1234", "1233", "1234"], "programmers" : ["예산", "배달"]}))
-    # save_problems(problems)
+    if sys.platform == "win32":
+        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+    problems = asyncio.run(get_problems(
+        {"baekjoon": ["1011", "1023", "1024"], "baekjoon2": ["1234", "1233", "1234"], "programmers" : ["예산", "배달"]}))
+    save_and_return_problems(problems)
