@@ -253,4 +253,4 @@ if __name__ == "__main__":
     # README 업데이트 성공 여부 확인
     condition = run_main()
     # Github Actions의 실행 조건 전달
-    print(f"condition={condition}")
+    print(f"DO_UPDATE={condition}")
