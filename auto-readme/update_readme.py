@@ -117,7 +117,7 @@ def get_FileInfos_by_platform(file_paths: List[str]) -> Dict[str, List[FileInfo]
     """
     file_infos = {}
     for file_path in file_paths:
-        # 문제 풀이 파일만
+        # 문제 풀이 파일 정보만 저장하기
         if file_path[-2:] == ".py":
             platform, is_sol, *file = file_path.split("/")
             if platform not in file_infos:
@@ -138,8 +138,10 @@ def modify_titles(file_infos: List[FileInfo], problem_infos: Dict[str, List[str]
     - 실제 문제 이름과 달리 파일명엔 공백이 없음 -> 크롤링해서 받아온 이름 활용
     - 불필요한 단어 제거 : [1차], [2021년 ~~] 등의 패턴 제거
     """
-    title_dict = {problem_key.replace(" ", ""): problem_info[1] for problem_key, problem_info in problem_infos.items()}
-    url_dict = {problem_key.replace(" ", ""): problem_info[2] for problem_key, problem_info in problem_infos.items()}
+    title_dict = {problem_key.replace(
+        " ", ""): problem_info[1] for problem_key, problem_info in problem_infos.items()}
+    url_dict = {problem_key.replace(
+        " ", ""): problem_info[2] for problem_key, problem_info in problem_infos.items()}
     for file_info in file_infos:
         # 불필요한 단어 제거
         if file_info.platform == "baekjoon":
@@ -205,7 +207,12 @@ def concat_readme(platforms: List[str]):
                 main_readme.write(readme.read() + "\n")
                 main_readme.write("---" + "\n")
 
-if __name__ == "__main__":
+
+def run_main() -> bool:
+    """
+    README 업데이트 진행
+    - 성공 시 True, 실패 시 False 반환
+    """
     # 윈도우 10 문제 해결
     if sys.platform == "win32":
         asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
@@ -213,9 +220,13 @@ if __name__ == "__main__":
     file_paths = GIT_REPO.git.diff(
          [f"{GIT_BRANCH}..origin/{GIT_BRANCH}"], name_only=True)
     file_paths = file_paths.split("\n")
-    # # 문제 풀이 파일만 선택
-    file_paths = [file_path for file_path in file_paths if file_path.split("/")[0] in PLATFORMS]
+    # # 문제 풀이와 관련된 파일만 불러오기
+    file_paths = [file_path for file_path in file_paths if file_path.split(
+        "/")[0] in PLATFORMS]
     file_infos_platform = get_FileInfos_by_platform(file_paths)
+    # 커밋된 파일이 문제 풀이랑 상관 없는 경우
+    if not file_infos_platform:
+        return False
     print("새로 Commit된 File 정보 받아옴")
     problems = asyncio.run(get_problems({platform: [
                         file_info.title for file_info in file_infos] for platform, file_infos in file_infos_platform.items()}))
@@ -235,3 +246,11 @@ if __name__ == "__main__":
     # 전체 풀이 내역 작성하기
     concat_readme(PLATFORMS)
     print("전체 README 수정 완료")
+    return True
+
+
+if __name__ == "__main__":
+    # README 업데이트 성공 여부 확인
+    condition = run_main()
+    # Github Actions의 실행 조건 전달
+    print(f"condition={condition}")
