@@ -29,9 +29,9 @@ jobs:
       run: |
         python update_readme.py >> $GITHUB_OUTPUT
     # 변수 전달 됐는지 확인
-    - name: Echo condition
+    - name: Echo condition Var
       run: echo ${{steps.condition.outputs.DO_UPDATE}}
-    # 업데이트 적용 후 commit
+    # 업데이트가 됐다면 commit 진행
     - name: Commit changes
       if: ${{steps.condition.outputs.DO_UPDATE == 'True'}}
       run: |
