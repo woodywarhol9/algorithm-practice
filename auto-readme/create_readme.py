@@ -11,7 +11,9 @@ from git import Repo
 
 # 관리할 폴더
 PLATFORMS = ["baekjoon", "programmers"]  # , "softeer"]
+
 # README 작성 관련
+MD_NAME = "test.md"
 MD_HEADER = {
     "baekjoon": "Baekjoon 문제 풀이 내역",
     "programmers": "Programmers 문제 풀이 내역",
@@ -82,7 +84,7 @@ MD_S_CHARS = {
 # git 활용
 GIT_REPO = Repo.init("../")
 GIT_BRANCH = GIT_REPO.active_branch
-GIT_BASE_DIR = f"https://github.com/woodywarhol9/algorithm-practice/blob/{GIT_REPO.head.commit}/"
+GIT_BASE_DIR = f"https://github.com/woodywarhol9/algorithm-practice/blob/{GIT_REPO.head.commit}"
 
 
 class FileInfo:
@@ -165,7 +167,7 @@ def get_lines(file_infos: List[FileInfo]) -> str:
     for idx, file_info in enumerate(file_infos):
         sol = '✔️' if file_info.is_sol == "solved" else '❌'
         md_lines.append(
-            f"{idx+1}|{file_info.dt}|{file_info.title}|[Link]({GIT_BASE_DIR}{file_info.path})|{MD_DIFFICULTY[file_info.difficulty.upper()]}|{sol}")
+            f"|{idx+1}|{file_info.dt}|{file_info.title}|[Link]({GIT_BASE_DIR}/{file_info.path})|{MD_DIFFICULTY[file_info.difficulty.upper()]}|{sol}|")
     # 마크다운 테이블 형식
     md_lines.append(MD_TABLE)
     return "\n".join(md_lines[::-1])  # 가장 최근에 푼 문제가 가장 상위에 작성되도록
@@ -175,7 +177,7 @@ def write_readme(md_lines: str, platform: str):
     """
     플랫폼 별 README 파일 작성
     """
-    with open(f"../{platform}/README.md", "w", encoding="UTF-8") as readme:
+    with open(f"../{platform}/{MD_NAME}", "w", encoding="UTF-8") as readme:
         readme.write(f"## {MD_HEADER[platform]}" + "\n")  # 헤더 작성
         readme.write(md_lines)
 
@@ -184,7 +186,7 @@ def concat_readme(platforms: List[str]):
     """
     전체 README 파일 작성
     """
-    with open(f"../test.md", "w", encoding="UTF-8") as main_readme:
+    with open(f"../{MD_NAME}", "w", encoding="UTF-8") as main_readme:
         # 헤더 내용
         main_readme.write("# Problem Solving" + "\n")
         main_readme.write("알고리즘 문제 풀이 내역을 업로드합니다." + "\n")
@@ -196,7 +198,7 @@ def concat_readme(platforms: List[str]):
         main_readme.write("---" + "\n")
         # 각 플랫폼 별 README 파일 불러와서 병합하기
         for platform in platforms:
-            with open(f"../{platform}/README.md", "r", encoding="UTF-8") as readme:
+            with open(f"../{platform}/{MD_NAME}", "r", encoding="UTF-8") as readme:
                 main_readme.write(readme.read() + "\n")
                 main_readme.write("---" + "\n")
 
@@ -212,6 +214,7 @@ if __name__ == "__main__":
                            file_info.title for file_info in file_infos] for platform, file_infos in file_infos_platform.items()}))
     print("크롤링 완료")
     problem_infos = save_and_return_problems(problems)
+    # 파일 잘 저장됐는지 확인
     with open("test", "rb") as file:
         problem_infos = pickle.load(file)
     modify_titles(sum(file_infos_platform.values(), []), problem_infos)

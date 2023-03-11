@@ -140,7 +140,7 @@ class ASyncScraper:
     """
     A web scrapers in async way
     """
-    lst = {"baekjoon": BaekjoonScraper, "baekjoon2": BaekjoonScraper}
+    lst = {"baekjoon": BaekjoonScraper}
 
     def __init__(self, platforms):
         self.scraper = {platform: ASyncScraper.lst[platform](
@@ -193,7 +193,7 @@ def upsert_problems(problems: List[Problem]):
             problem_infos[problem_key] = [
                 problem.id, problem.title, problem.url]
             problem_infos.update(
-                [problem_key, [problem.id, problem.title, problem.url]])
+                {problem_key : [problem.id, problem.title, problem.url]})
     # 저장
     with open("test", "wb") as file:
         pickle.dump(problem_infos, file)
@@ -204,5 +204,5 @@ if __name__ == "__main__":
     if sys.platform == "win32":
         asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
     problems = asyncio.run(get_problems(
-        {"baekjoon": ["1011", "1023", "1024"], "baekjoon2": ["1234", "1233", "1234"], "programmers" : ["예산", "배달"]}))
+        {"baekjoon": ["1011", "1023", "1024"], "baekjoon2": ["1234", "1233", "1234"], "programmers": ["예산", "배달"]}))
     save_and_return_problems(problems)
