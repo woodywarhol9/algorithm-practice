@@ -1,11 +1,12 @@
 from collections import deque
 
+
 def bfs(start, end, graph, visited):
     # 시작점 입력 + 방문 처리
     queue = deque()
     queue.append([start, 1])
     visited[start] = 1
-    
+
     while queue:
         node, cnt = queue.popleft()
         if node == end:
@@ -16,7 +17,8 @@ def bfs(start, end, graph, visited):
                     queue.append([next, cnt + 1])
                     visited[next] = 1
     return 0
-            
+
+
 def solution(begin, target, words):
     # answer = 0
     graph = {}
@@ -27,7 +29,8 @@ def solution(begin, target, words):
         graph[key] = []
         for j, val in enumerate(words):
             cnt = 0
-            if i == j: continue
+            if i == j:
+                continue
             for k in range(word_len):
                 # 거리 확인
                 if key[k] != val[k]:
