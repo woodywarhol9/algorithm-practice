@@ -117,16 +117,18 @@ def get_FileInfos_by_platform(file_paths: List[str]) -> Dict[str, List[FileInfo]
     """
     file_infos = {}
     for file_path in file_paths:
-        platform, is_sol, *file = file_path.split("/")
-        if platform not in file_infos:
-            file_infos[platform] = []
-        file = file[-1]
-        dt = get_dt(file_path)
-        # 특수 문자로 인해 변경해서 저장한 파일명 다시 되돌리기
-        for s_char in MD_S_CHARS:
-            file = file.replace(s_char, MD_S_CHARS[s_char])
-        file_infos[platform].append(
-            FileInfo(file_path, platform, is_sol, dt, file[:-3].split("_")[0], file[:-3].split("_")[1:]))
+        # 문제 풀이 파일만
+        if file_path[-2:] == ".py":
+            platform, is_sol, *file = file_path.split("/")
+            if platform not in file_infos:
+                file_infos[platform] = []
+            file = file[-1]
+            dt = get_dt(file_path)
+            # 특수 문자로 인해 변경해서 저장한 파일명 다시 되돌리기
+            for s_char in MD_S_CHARS:
+                file = file.replace(s_char, MD_S_CHARS[s_char])
+            file_infos[platform].append(
+                FileInfo(file_path, platform, is_sol, dt, file[:-3].split("_")[0], file[:-3].split("_")[1:]))
     return file_infos
 
 
