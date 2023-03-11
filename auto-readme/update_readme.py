@@ -118,7 +118,7 @@ def get_FileInfos_by_platform(file_paths: List[str]) -> Dict[str, List[FileInfo]
     file_infos = {}
     for file_path in file_paths:
         # 문제 풀이 파일 정보만 저장하기
-        if file_path[-2:] == ".py":
+        if file_path[-2:] == "py":
             platform, is_sol, *file = file_path.split("/")
             if platform not in file_infos:
                 file_infos[platform] = []
@@ -218,7 +218,7 @@ def run_main() -> bool:
         asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
     # 새로 Commit된 File만 확인
     file_paths = GIT_REPO.git.diff(
-         [f"origin/{GIT_BRANCH}..{GIT_BRANCH}"], name_only=True)
+        [f"origin/{GIT_BRANCH}..{GIT_BRANCH}"], name_only=True)
     file_paths = file_paths.split("\n")
     # # 문제 풀이와 관련된 파일만 불러오기
     file_paths = [file_path for file_path in file_paths if file_path.split(
@@ -227,25 +227,22 @@ def run_main() -> bool:
     # 커밋된 파일이 문제 풀이랑 상관 없는 경우
     if not file_infos_platform:
         return False
-    print("새로 Commit된 File 정보 받아옴")
+    # 문제 정보 크롤링
     problems = asyncio.run(get_problems({platform: [
-                        file_info.title for file_info in file_infos] for platform, file_infos in file_infos_platform.items()}))
-    print("크롤링 완료")
+        file_info.title for file_info in file_infos] for platform, file_infos in file_infos_platform.items()}))
+    # 문제 정보 업데이트
     problem_infos = upsert_problems(problems)
-    print("문제 정보 업데이트 완료")
     with open("test", "rb") as file:
         problem_infos = pickle.load(file)
+    # 문제 이름 수정
     modify_titles(sum(file_infos_platform.values(), []), problem_infos)
-    print("문제 이름 수정 완료")
     # 각 플랫폼 별 풀이 내역 수정하기
     for platform, file_infos in file_infos_platform.items():
         start_idx = cnt_lines(platform, MD_NAME)  # 신규 문제 idx 확인
         md_lines = get_lines(file_infos, start_idx)
         update_readme(md_lines, platform)
-        print(f"{platform} README 수정 완료")
     # 전체 풀이 내역 작성하기
     concat_readme(PLATFORMS)
-    print("전체 README 수정 완료")
     return True
 
 
