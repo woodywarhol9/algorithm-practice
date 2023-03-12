@@ -219,10 +219,10 @@ def run_main() -> bool:
     # 새로 commit된 File만 확인
     file_paths = GIT_REPO.git.diff([f"origin/{GIT_BRANCH}..origin/{GIT_BRANCH}^"], name_only=True)
     file_paths = file_paths.split("\n")
-    print(file_paths)
     # # 문제 풀이와 관련된 파일만 불러오기
     file_paths = [file_path for file_path in file_paths if file_path.split(
         "/")[0] in PLATFORMS]
+    print(file_paths)
     file_infos_platform = get_FileInfos_by_platform(file_paths)
     # 커밋된 파일이 문제 풀이랑 상관 없는 경우
     if not file_infos_platform:
