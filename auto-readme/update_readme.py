@@ -216,9 +216,8 @@ def run_main() -> bool:
     # 윈도우 10 문제 해결
     if sys.platform == "win32":
         asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-    # 새로 Commit된 File만 확인
-    file_paths = GIT_REPO.git.diff(
-        [f"origin/{GIT_BRANCH}..{GIT_BRANCH}"], name_only=True)
+    # 새로 commit된 File만 확인
+    file_paths = GIT_REPO.git.diff([f"origin/{GIT_BRANCH}..origin/{GIT_BRANCH}^"], name_only=True)
     file_paths = file_paths.split("\n")
     # # 문제 풀이와 관련된 파일만 불러오기
     file_paths = [file_path for file_path in file_paths if file_path.split(
