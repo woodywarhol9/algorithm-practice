@@ -219,6 +219,7 @@ def run_main() -> bool:
     # 새로 commit된 File만 확인
     file_paths = GIT_REPO.git.diff([f"origin/{GIT_BRANCH}..origin/{GIT_BRANCH}^"], name_only=True)
     file_paths = file_paths.split("\n")
+    print(file_paths)
     # # 문제 풀이와 관련된 파일만 불러오기
     file_paths = [file_path for file_path in file_paths if file_path.split(
         "/")[0] in PLATFORMS]
