@@ -11,7 +11,7 @@ from crawler import upsert_problems, get_problems
 # 관리할 폴더
 PLATFORMS = ["baekjoon", "programmers"]  # , "softeer"]
 # README 작성 관련
-MD_NAME = "test.md"
+MD_NAME = "README.md"
 MD_HEADER = {
     "baekjoon": "Baekjoon 문제 풀이 내역",
     "programmers": "Programmers 문제 풀이 내역",
@@ -231,7 +231,7 @@ def run_main() -> bool:
         file_info.title for file_info in file_infos] for platform, file_infos in file_infos_platform.items()}))
     # 문제 정보 업데이트
     problem_infos = upsert_problems(problems)
-    with open("test", "rb") as file:
+    with open("problem_info", "rb") as file:
         problem_infos = pickle.load(file)
     # 문제 이름 수정
     modify_titles(sum(file_infos_platform.values(), []), problem_infos)

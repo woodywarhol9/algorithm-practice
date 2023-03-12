@@ -13,7 +13,7 @@ from git import Repo
 PLATFORMS = ["baekjoon", "programmers"]  # , "softeer"]
 
 # README 작성 관련
-MD_NAME = "test.md"
+MD_NAME = "README.md"
 MD_HEADER = {
     "baekjoon": "Baekjoon 문제 풀이 내역",
     "programmers": "Programmers 문제 풀이 내역",
@@ -215,7 +215,7 @@ if __name__ == "__main__":
     print("크롤링 완료")
     problem_infos = save_and_return_problems(problems)
     # 파일 잘 저장됐는지 확인
-    with open("test", "rb") as file:
+    with open("problem_info", "rb") as file:
         problem_infos = pickle.load(file)
     modify_titles(sum(file_infos_platform.values(), []), problem_infos)
     print("문제 이름 수정 완료")

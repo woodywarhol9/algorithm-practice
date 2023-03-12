@@ -176,7 +176,7 @@ def save_and_return_problems(problems: List[Problem]) -> Dict[str, List[str]]:
     for problem in problems:
         problem_key = f"{problem.platform}/{problem.title}" if problem.platform != "baekjoon" else f"{problem.platform}/{problem.id}"
         problem_infos[problem_key] = [problem.id, problem.title, problem.url]
-    with open("test", "wb") as file:
+    with open("problem_info", "wb") as file:
         pickle.dump(problem_infos, file)
     return problem_infos
 
@@ -186,7 +186,7 @@ def upsert_problems(problems: List[Problem]):
     문제의 고유 정보 업데이트
     """
     # 새로 추가
-    with open("test", "rb") as file:
+    with open("problem_info", "rb") as file:
         problem_infos = pickle.load(file)
         for problem in problems:
             problem_key = f"{problem.platform}/{problem.title}" if problem.platform != "baekjoon" else f"{problem.platform}/{problem.id}"
@@ -195,7 +195,7 @@ def upsert_problems(problems: List[Problem]):
             problem_infos.update(
                 {problem_key : [problem.id, problem.title, problem.url]})
     # 저장
-    with open("test", "wb") as file:
+    with open("problem_info", "wb") as file:
         pickle.dump(problem_infos, file)
 
 
