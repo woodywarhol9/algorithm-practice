@@ -117,11 +117,13 @@ def get_FileInfos_by_platform(file_paths: List[str]) -> Dict[str, List[FileInfo]
     """
     file_infos = {}
     for file_path in file_paths:
+        print(file_path)
         # 문제 풀이 파일 정보만 저장하기
         if file_path[-2:] == "py":
             platform, is_sol, *file = file_path.split("/")
             if platform not in file_infos:
                 file_infos[platform] = []
+            # 파일 이름 정보만 가져오기
             file = file[-1]
             dt = get_dt(file_path)
             # 특수 문자로 인해 변경해서 저장한 파일명 다시 되돌리기
@@ -220,11 +222,10 @@ def run_main() -> bool:
     file_paths = GIT_REPO.git.diff([f"origin/{GIT_BRANCH}..origin/{GIT_BRANCH}^"], name_only=True)
     file_paths = file_paths.split("\n")
     # # 문제 풀이와 관련된 파일만 불러오기
-    file_paths = [file_path for file_path in file_paths if file_path.split(
-        "/")[0] in PLATFORMS]
     print(file_paths)
+    file_paths = [file_path for file_path in file_paths if file_path.split("/")[0] in PLATFORMS]
     file_infos_platform = get_FileInfos_by_platform(file_paths)
-    # 커밋된 파일이 문제 풀이랑 상관 없는 경우
+    # 커밋된 파일이 문제 풀이랑 상관 없는 경우 제외
     if not file_infos_platform:
         return False
     # 문제 정보 크롤링
