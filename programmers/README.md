@@ -1,6 +1,7 @@
 ## Programmers 문제 풀이 내역
 | \# | Date | Problem | Solution | Difficulty | Solved |
 | :----: | :------: | :---------------: | :-----: | :------: | :-------: |
+|124|2023-03-13|[쿼드압축 후 개수 세기](https://programmers.co.kr//learn/courses/30/lessons/68936)|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/84616ff9e21ccf0eae4b0f6a36b10d6e4dbedcc7/programmers/solved/lv2_쿼드압축후개수세기.py)|⭐⭐☆☆☆|✔️|
 |123|2023-03-12|[소수 찾기](https://programmers.co.kr//learn/courses/30/lessons/42839)|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/6045dc5202b4e897863d6bd62cd32de77a11b95b/programmers/solved/lv2_소수찾기.py)|⭐⭐☆☆☆|✔️|
 |122|2023-03-11|[덧칠하기](https://programmers.co.kr//learn/courses/30/lessons/161989)|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/4c6fd55ca92aecdbb12ae201435e3e65b391a2ce/programmers/solved/lv2_덧칠하기.py)|⭐⭐☆☆☆|✔️|
 |121|2023-03-09|[2 x n 타일링](https://programmers.co.kr//learn/courses/30/lessons/12900)|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/6593e88d156dd3c1cc4b11daac454aa318060441/programmers/solved/lv2_2xn타일링.py)|⭐⭐☆☆☆|✔️|
