@@ -1,6 +1,7 @@
 ## Programmers 문제 풀이 내역
 | \# | Date | Problem | Solution | Difficulty | Solved |
 | :----: | :------: | :---------------: | :-----: | :------: | :-------: |
+|126|2023-03-22|[뒤에 있는 큰 수 찾기](https://programmers.co.kr//learn/courses/30/lessons/154539)|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/10b0b6fcfa16a7b447aba0438572a76b45bbb8d4/programmers/solved/lv2_뒤에있는큰수찾기.py)|⭐⭐☆☆☆|✔️|
 |125|2023-03-15|[큰 수 만들기](https://programmers.co.kr//learn/courses/30/lessons/42883)|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/eed4bda3937c030593e3dbba9abc73097c11783e/programmers/retry/lv2_큰수만들기.py)|⭐⭐☆☆☆|❌|
 |124|2023-03-13|[쿼드압축 후 개수 세기](https://programmers.co.kr//learn/courses/30/lessons/68936)|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/84616ff9e21ccf0eae4b0f6a36b10d6e4dbedcc7/programmers/solved/lv2_쿼드압축후개수세기.py)|⭐⭐☆☆☆|✔️|
 |123|2023-03-12|[소수 찾기](https://programmers.co.kr//learn/courses/30/lessons/42839)|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/6045dc5202b4e897863d6bd62cd32de77a11b95b/programmers/solved/lv2_소수찾기.py)|⭐⭐☆☆☆|✔️|
