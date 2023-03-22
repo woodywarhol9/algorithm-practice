@@ -34,7 +34,8 @@ class BaekjoonScraper:
     BASE_URL = "https://www.acmicpc.net"
     API_URL = "https://solved.ac/api/v3"
 
-    async def fetch(self, session: aiohttp.ClientSession, url: str, headers: Dict[str, str]) -> str:
+    @staticmethod
+    async def fetch(session: aiohttp.ClientSession, url: str, headers: Dict[str, str]) -> str:
         """
         Sends an HTTP GET request using the specified session, URL, and headers.
         Returns the response body as json.
@@ -55,7 +56,7 @@ class BaekjoonScraper:
         api_url = f"{BaekjoonScraper.API_URL}/problem/show?problemId={problem_id}"
         headers = {"Content-Type": "application/json"}
         async with aiohttp.ClientSession() as session:
-            response_json = await self.fetch(session, api_url, headers)
+            response_json = await BaekjoonScraper.fetch(session, api_url, headers)
             # 파일 정보 확인
             problem_title = response_json['titleKo']
             problem_url = f"{BaekjoonScraper.BASE_URL}/problem/{problem_id}"
@@ -78,7 +79,8 @@ class ProgrammersScraper:
     BASE_URL = "https://programmers.co.kr/"
     API_URL = "https://school.programmers.co.kr/learn/courses/30/30-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%97%B0%EC%8A%B5"
 
-    def fetch(self, session: requests.Session, url: str, headers: Dict[str, str]) -> str:
+    @staticmethod
+    def fetch(session: requests.Session, url: str, headers: Dict[str, str]) -> str:
         """
         Sends an HTTP GET request using the specified session, URL, and headers.
         Returns the response body as json.
@@ -100,7 +102,7 @@ class ProgrammersScraper:
         headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.50", }
         with requests.Session() as session:
-            response_html = self.fetch(session, api_url, headers)
+            response_html = ProgrammersScraper.fetch(session, api_url, headers)
             soup = BeautifulSoup(response_html, "html.parser")
             texts = soup.select(".lesson-title")
             # 결과 저장
@@ -121,7 +123,7 @@ class ProgrammersScraper:
 
 class SyncScraper:
     """
-    A web scrapers in sync way
+    Web scrapers in sync way
     """
     lst = {"programmers": ProgrammersScraper}
 
@@ -138,7 +140,7 @@ class SyncScraper:
 
 class ASyncScraper:
     """
-    A web scrapers in async way
+    Web scrapers in async way
     """
     lst = {"baekjoon": BaekjoonScraper}
 
@@ -152,19 +154,24 @@ class ASyncScraper:
         return await asyncio.gather(*tasks)
 
 
-async def get_problems(problem_infos: Dict[str, List[str]]) -> List[Problem]:
-    # 크롤러 생성
-    sync_scraper = SyncScraper(tuple(problem_infos.keys()))
-    async_scraper = ASyncScraper(tuple(problem_infos.keys()))
-    # 문제 정보 저장
-    problems = []
-    if sync_scraper.scraper:
-        problems.extend(sync_scraper.get_problems(problem_infos))
-    if async_scraper.scraper:
-        problems.extend(await async_scraper.get_problems(problem_infos))
-    # 1차원으로 변경
-    problems = sum(problems, [])
-    return problems
+class Scraper:
+    """
+    Web scrapers
+    """
+    @staticmethod
+    async def get_problems(problem_infos: Dict[str, List[str]]) -> List[Problem]:
+        # 크롤러 생성
+        sync_scraper = SyncScraper(tuple(problem_infos.keys()))
+        async_scraper = ASyncScraper(tuple(problem_infos.keys()))
+        # 문제 정보 저장
+        problems = []
+        if sync_scraper.scraper:
+            problems.extend(sync_scraper.get_problems(problem_infos))
+        if async_scraper.scraper:
+            problems.extend(await async_scraper.get_problems(problem_infos))
+        # 1차원으로 변경
+        problems = sum(problems, [])
+        return problems
 
 
 def save_and_return_problems(problems: List[Problem]) -> Dict[str, List[str]]:
@@ -193,7 +200,7 @@ def upsert_problems(problems: List[Problem]):
             problem_infos[problem_key] = [
                 problem.id, problem.title, problem.url]
             problem_infos.update(
-                {problem_key : [problem.id, problem.title, problem.url]})
+                {problem_key: [problem.id, problem.title, problem.url]})
     # 저장
     with open("problem_info", "wb") as file:
         pickle.dump(problem_infos, file)
@@ -203,6 +210,6 @@ if __name__ == "__main__":
     # Windows의 aiohttp 오류 방지
     if sys.platform == "win32":
         asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-    problems = asyncio.run(get_problems(
+    problems = asyncio.run(Scraper.get_problems(
         {"baekjoon": ["1011", "1023", "1024"], "baekjoon2": ["1234", "1233", "1234"], "programmers": ["예산", "배달"]}))
     save_and_return_problems(problems)
