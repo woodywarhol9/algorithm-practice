@@ -9,6 +9,7 @@
 |-- crawler.py
 |-- create_readme.py
 |-- problem_info
+|-- const.py
 |-- src
 |   |-- 0.svg
 |   |-- 1.svg
@@ -18,10 +19,24 @@
 `-- update_readme.py
 ```
 
-- `crawler.py` : Baekjoon, Programmers 등 에서 문제 정보를 받아옵니다.
-- `create_readme.py` : 문제 정보를 바탕으로 초기 `README` 파일을 작성합니다.
-- `update_readme.py` : 새로 `push`된 파일로 `README` 파일을 업데이트합니다.
+- `crawler.py`
+  - Baekjoon, Programmers 등의 사이트에서 문제 정보를 크롤링합니다.
+  - API 사용이 가능한 사이트의 문제 정보는 비동기 처리로 크롤링합니다.
 
+</br>
+
+- `create_readme.py` : 문제 정보를 바탕으로 초기 `README` 파일을 작성합니다.
+  - 기존 풀이의 파일명을 바탕으로 작성합니다.
+
+</br>
+
+- `update_readme.py` : 새로 `push`된 파일 정보로 `README` 파일을 업데이트합니다.
+  - `push`된 풀이의 파일명을 `git diff`로 받아와 처리합니다.
+
+</br>
+
+- `const.py`
+  - `README` 작성 양식들이 변수로 저장돼 있습니다.
 
 ### How to use
 ---
