@@ -178,6 +178,7 @@
 ## Programmers 문제 풀이 내역
 | \# | Date | Problem | Solution | Difficulty | Solved |
 | :----: | :------: | :---------------: | :-----: | :------: | :-------: |
+|128|2023-03-25|[숫자 변환하기](https://programmers.co.kr//learn/courses/30/lessons/154538)|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/fb81841db407902bd54db257df68a9def153e3a9/programmers/solved/lv2_숫자변환하기.py)|⭐⭐☆☆☆|✔️|
 |127|2023-03-24|[삼각 달팽이](https://programmers.co.kr//learn/courses/30/lessons/68645)|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/190a9c89d70021e13f7bac918a06b7b0fc93bac5/programmers/retry/lv2_삼각달팽이.py)|⭐⭐☆☆☆|❌|
 |126|2023-03-22|[뒤에 있는 큰 수 찾기](https://programmers.co.kr//learn/courses/30/lessons/154539)|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/10b0b6fcfa16a7b447aba0438572a76b45bbb8d4/programmers/solved/lv2_뒤에있는큰수찾기.py)|⭐⭐☆☆☆|✔️|
 |125|2023-03-15|[큰 수 만들기](https://programmers.co.kr//learn/courses/30/lessons/42883)|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/eed4bda3937c030593e3dbba9abc73097c11783e/programmers/retry/lv2_큰수만들기.py)|⭐⭐☆☆☆|❌|
