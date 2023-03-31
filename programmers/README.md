@@ -1,6 +1,7 @@
 ## Programmers 문제 풀이 내역
 | \# | Date | Problem | Solution | Difficulty | Solved |
 | :----: | :------: | :---------------: | :-----: | :------: | :-------: |
+|130|2023-03-31|[메뉴 리뉴얼](https://programmers.co.kr//learn/courses/30/lessons/72411)|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/4b7f31af3af818dd2c100c331bbdcd42baa7d235/programmers/solved/lv2_메뉴리뉴얼.py)|⭐⭐☆☆☆|✔️|
 |129|2023-03-30|[롤케이크 자르기](https://programmers.co.kr//learn/courses/30/lessons/132265)|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/5ce0e69cd1c2ffd102fb4d64d23df106849aeaf3/programmers/retry/lv2_롤케이크자르기.py)|⭐⭐☆☆☆|❌|
 |128|2023-03-25|[숫자 변환하기](https://programmers.co.kr//learn/courses/30/lessons/154538)|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/fb81841db407902bd54db257df68a9def153e3a9/programmers/solved/lv2_숫자변환하기.py)|⭐⭐☆☆☆|✔️|
 |127|2023-03-24|[삼각 달팽이](https://programmers.co.kr//learn/courses/30/lessons/68645)|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/190a9c89d70021e13f7bac918a06b7b0fc93bac5/programmers/retry/lv2_삼각달팽이.py)|⭐⭐☆☆☆|❌|
