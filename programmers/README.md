@@ -1,6 +1,7 @@
 ## Programmers 문제 풀이 내역
 | \# | Date | Problem | Solution | Difficulty | Solved |
 | :----: | :------: | :---------------: | :-----: | :------: | :-------: |
+|132|2023-04-06|[방금그곡](https://programmers.co.kr//learn/courses/30/lessons/17683)|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/0b15268ec19169012ce2ea44ab0f8c0f8893b761/programmers/solved/lv2_[3차]방금그곡.py)|⭐⭐☆☆☆|✔️|
 |131|2023-04-05|[택배상자](https://programmers.co.kr//learn/courses/30/lessons/131704)|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/61d45461dc28af9639f29b622afd5c99a2ca6220/programmers/solved/lv2_택배상자.py)|⭐⭐☆☆☆|✔️|
 |130|2023-03-31|[메뉴 리뉴얼](https://programmers.co.kr//learn/courses/30/lessons/72411)|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/4b7f31af3af818dd2c100c331bbdcd42baa7d235/programmers/solved/lv2_메뉴리뉴얼.py)|⭐⭐☆☆☆|✔️|
 |129|2023-03-30|[롤케이크 자르기](https://programmers.co.kr//learn/courses/30/lessons/132265)|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/5ce0e69cd1c2ffd102fb4d64d23df106849aeaf3/programmers/retry/lv2_롤케이크자르기.py)|⭐⭐☆☆☆|❌|
