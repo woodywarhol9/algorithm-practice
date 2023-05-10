@@ -43,7 +43,6 @@ class BaekjoonScraper:
         try:
             async with session.get(url, headers=headers) as response:
                 if response.status == 200:
-                    await asyncio.sleep(10)
                     return await response.json()
         except aiohttp.ClientError:
             print(f"Failed to fetch{url}")
