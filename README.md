@@ -9,6 +9,7 @@
 ## Baekjoon 문제 풀이 내역
 | \# | Date | Problem | Solution | Difficulty | Solved |
 | :----: | :------: | :---------------: | :-----: | :------: | :-------: |
+|166|2023-05-26|[팰린드롬 만들기](https://www.acmicpc.net/problem/1254)|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/88fe8e5bd38fb2f7746b36412737e7bd43fe99a5/baekjoon/solved/implementation/s2_1254.py)|![티어](/auto-readme/src/9.svg)|✔️|
 |165|2022-11-11|[연산자 끼워넣기](https://www.acmicpc.net/problem/14888)|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/6593e88d156dd3c1cc4b11daac454aa318060441/baekjoon/solved/implementation/s1_14888.py)|![티어](/auto-readme/src/10.svg)|✔️|
 |164|2022-11-10|[퇴사](https://www.acmicpc.net/problem/14501)|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/6593e88d156dd3c1cc4b11daac454aa318060441/baekjoon/retry/s3_14501.py)|![티어](/auto-readme/src/8.svg)|❌|
 |163|2022-11-08|[시험 감독](https://www.acmicpc.net/problem/13458)|[Link](https://github.com/woodywarhol9/algorithm-practice/blob/6593e88d156dd3c1cc4b11daac454aa318060441/baekjoon/solved/implementation/b2_13458.py)|![티어](/auto-readme/src/4.svg)|✔️|
